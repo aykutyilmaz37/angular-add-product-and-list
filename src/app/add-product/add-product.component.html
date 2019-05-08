@@ -1,0 +1,27 @@
+<form class="add-product">
+  <div>
+    <label>Ürün Adı</label>
+    <select name="slctProduct" [(ngModel)]="ProductName">
+      <option value="Ürün 1">Ürün 1</option>
+      <option value="Ürün 2">Ürün 2</option>
+      <option value="Ürün 3">Ürün 3</option>
+      <option value="Ürün 4">Ürün 4</option>
+      <option value="Ürün 5">Ürün 5</option>
+    </select>
+  </div>
+  <div>
+    <label>Ürün Adedi</label>
+    <input type="text" name="txtQty" [(ngModel)]="Qty" />
+  </div>
+  <div>
+    <label>Ürün Fiyatı</label>
+    <input type="text" name="txtPrice" [(ngModel)]="Price" />
+  </div>
+  <div>
+    <button type="button" id="btnAddProduct" (click)="btnAddProduct_Click()">
+      Ekle
+    </button>
+  </div>
+</form>
+
+  

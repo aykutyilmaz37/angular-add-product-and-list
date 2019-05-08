@@ -1,0 +1,16 @@
+<table *ngIf="Model.length > 0">
+  <thead>
+    <tr>
+      <td>Ürün Adı</td>
+      <td>Ürün Adedi</td>
+      <td>Ürün Fiyatı</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of Model">
+      <td>{{ item.ProductName }}</td>
+      <td>{{ item.Qty }}</td>
+      <td>{{ item.Price }}</td>
+    </tr>
+  </tbody>
+</table>
